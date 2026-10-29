@@ -1,0 +1,34 @@
+```html
+<div class="developer-image">
+    <img
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80"
+        alt="कंप्यूटर पर काम करती डेवलपर टीम"
+    >
+</div>
+```
+
+और अपने `<style>` टैग के अंदर यह CSS जोड़ो:
+
+```css
+.developer-image {
+    max-width: 650px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid #26364b;
+    box-shadow: 0 12px 35px #0005;
+}
+
+.developer-image img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .developer-image img {
+        height: 200px;
+    }
+}
+```
